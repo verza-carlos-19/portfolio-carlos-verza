@@ -3,7 +3,10 @@ import { ButtonSpecial } from "./ButtonCVStyles";
 
 function ButtonCV() {
   return (
-    <a download href="">
+    <a
+      download
+      href="https://drive.google.com/file/d/177fTrMEYqlPdOvqBTUuFK-VrWlLdcpa8/view?usp=drive_link"
+    >
       <ButtonSpecial>
         <div class="docs">
           <svg
