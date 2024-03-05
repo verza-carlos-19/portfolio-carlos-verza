@@ -18,7 +18,7 @@ export const HeroBox = styled.section`
     #1a1a1a
   );
   background-size: 25px 25px;
-
+  box-shadow: inset 0 -104px 7rem #080808;
   /* Animation */
   animation: move 4s linear infinite;
 
@@ -59,11 +59,16 @@ export const Presentation = styled.article`
   align-items: center;
   gap: 0.8rem;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
   border: 2px solid #d4cfdb;
   box-shadow: inset 0 0 0.7rem #626065, 0px 0px 0.5rem white;
   background-color: #080808;
   color: black;
   padding: 1.5rem;
+  &:hover {
+    box-shadow: inset 0 0 1rem #626065, 0px 0px 1rem white;
+  }
+
   /* animation: rgb 50s infinite; */
   img {
     width: 100%;
@@ -101,7 +106,7 @@ export const HeroText = styled.p`
 export const InfoBox = styled.article`
   width: 100%;
   max-width: 600px;
-  height: 375px;
+  height: 400px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -173,6 +178,7 @@ export const TipInfo = styled.div`
     color: whitesmoke;
     font-size: 18px;
     cursor: pointer;
+    transition: all 0.5s;
   }
 
   .tooltip {
@@ -203,6 +209,9 @@ export const TipInfo = styled.div`
     transform: translateX(-50%);
   }
 
+  .text:hover {
+    filter: drop-shadow(0 0 0.5rem #4e4f4f);
+  }
   .text:hover ~ .tooltip {
     top: 140%;
     opacity: 1;
@@ -228,4 +237,16 @@ export const BoxBodyText = styled.p`
   transition: all 0.5s ease-in-out;
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
+`;
+export const BoxButtonHero = styled.div`
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;

@@ -8,17 +8,17 @@ function ButtonCV() {
       href="https://drive.google.com/file/d/177fTrMEYqlPdOvqBTUuFK-VrWlLdcpa8/view?usp=drive_link"
     >
       <ButtonSpecial>
-        <div class="docs">
+        <div className="docs">
           <svg
             viewBox="0 0 24 24"
             width="20"
             height="20"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="css-i6dzq1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="css-i6dzq1"
           >
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
             <polyline points="14 2 14 8 20 8"></polyline>
@@ -28,17 +28,17 @@ function ButtonCV() {
           </svg>
           Mi CV
         </div>
-        <div class="download">
+        <div className="download">
           <svg
             viewBox="0 0 24 24"
             width="24"
             height="24"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="css-i6dzq1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="css-i6dzq1"
           >
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="7 10 12 15 17 10"></polyline>
