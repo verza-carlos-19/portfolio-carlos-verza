@@ -14,7 +14,7 @@ import {
   TipInfo,
   TitleHero,
 } from "./HeroStyles";
-import ButtonCV from "../ButtonCV/ButtonCV";
+import ButtonCV from "../Ui/Buttons/ButtonCV/ButtonCV";
 import SocialMedia from "../SocialMedia/SocialMedia";
 
 function Hero() {

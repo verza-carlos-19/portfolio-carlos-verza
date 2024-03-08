@@ -1,5 +1,6 @@
 import React from "react";
 import { ProjectsBox, ProjectsBoxSizing, Title } from "./ProjectStyles";
+import Carousel from "./Carousel/Carousel";
 
 function Projects() {
   return (
@@ -7,9 +8,7 @@ function Projects() {
       <ProjectsBox>
         <ProjectsBoxSizing>
           <Title>Proyectos</Title>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-          voluptatem necessitatibus dolores facere explicabo ea nobis cum
-          pariatur molestias. Cum?
+          <Carousel />
         </ProjectsBoxSizing>
       </ProjectsBox>
     </>

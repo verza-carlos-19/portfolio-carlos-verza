@@ -5,6 +5,24 @@ export const ProjectsBox = styled.section`
   justify-content: center;
   align-items: center;
   background: #080808;
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
 `;
 export const ProjectsBoxSizing = styled.article`
   width: 100%;
@@ -14,6 +32,7 @@ export const ProjectsBoxSizing = styled.article`
   align-items: center;
   gap: 2rem;
   padding: 2rem;
+  margin-bottom: 10rem;
 `;
 export const Title = styled.h2`
   text-align: center;

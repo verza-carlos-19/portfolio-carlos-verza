@@ -38,6 +38,7 @@ export const LinkedinItem = styled.button`
     border: 1px solid rgba(216, 216, 216, 0.466);
     background-color: rgba(190, 190, 190, 0.466);
     backdrop-filter: blur(4px);
+    box-shadow: 0 0 5px white, inset 0 0 5px white;
   }
 `;
 export const GitHubItem = styled.button`
@@ -71,6 +72,7 @@ export const GitHubItem = styled.button`
   &:hover .svgContainer {
     background-color: rgba(156, 156, 156, 0.466);
     backdrop-filter: blur(4px);
+    box-shadow: 0 0 5px white, inset 0 0 5px white;
   }
 `;
 export const InstagramItem = styled.button`
@@ -102,5 +104,6 @@ export const InstagramItem = styled.button`
   }
   &:hover .svgContainer {
     background-color: rgba(156, 156, 156, 0.466);
+    box-shadow: 0 0 5px white, inset 0 0 5px white;
   }
 `;

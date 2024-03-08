@@ -212,7 +212,7 @@ export const TipInfo = styled.div`
   .text:hover {
     filter: drop-shadow(0 0 0.5rem #4e4f4f);
   }
-  .text:hover ~ .tooltip {
+  &:hover .tooltip {
     top: 140%;
     opacity: 1;
     visibility: visible;
