@@ -33,6 +33,9 @@ export const ProjectsBoxSizing = styled.article`
   gap: 2rem;
   padding: 2rem;
   margin-bottom: 10rem;
+  @media (max-width: 768px) {
+    padding: 0rem;
+  }
 `;
 export const Title = styled.h2`
   text-align: center;

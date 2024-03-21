@@ -6,7 +6,7 @@ export const ContainerCarousel = styled.article`
   perspective: 1500px;
   position: relative;
   @media (max-width: 768px) {
-    scale: 0.8;
+    scale: 0.58;
   }
 `;
 export const CarouselCont = styled.div`
