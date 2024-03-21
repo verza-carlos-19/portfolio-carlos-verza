@@ -3,10 +3,7 @@ import { ButtonSpecial } from "./ButtonCVStyles";
 
 function ButtonCV() {
   return (
-    <a
-      download
-      href="https://drive.google.com/file/d/177fTrMEYqlPdOvqBTUuFK-VrWlLdcpa8/view?usp=drive_link"
-    >
+    <a download href="./Carlos Verza - CV.pdf">
       <ButtonSpecial>
         <div className="docs">
           <svg

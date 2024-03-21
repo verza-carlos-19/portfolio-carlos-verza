@@ -14,8 +14,10 @@ import {
   TipInfo,
   TitleHero,
 } from "./HeroStyles";
+import { AnimatePresence } from "framer-motion";
 import ButtonCV from "../Ui/Buttons/ButtonCV/ButtonCV";
 import SocialMedia from "../SocialMedia/SocialMedia";
+import HoverTextAnimated from "../Ui/Texts/HoverTextAnimated/HoverTextAnimated";
 
 function Hero() {
   return (
@@ -229,12 +231,16 @@ function Hero() {
             </BoxRowItem>
           </InfoBoxRow>
           <InfoBoxBody>
-            <BoxBodyTitle>Sobre mi:</BoxBodyTitle>
-            <BoxBodyText>
-              Soy un desarrollador Full Stack especializado en MERN y diseñador
-              grafico, cuento con 3 años de experiencia en el desarrollo web y
-              mas de 5 años en la programación.
-            </BoxBodyText>
+            <AnimatePresence>
+              <HoverTextAnimated>
+                <BoxBodyTitle>Sobre mi:</BoxBodyTitle>
+                {/* <BoxBodyText> */}
+                Soy un desarrollador Front End especializado en ReactJs y
+                diseñador grafico, cuento con 3 años de experiencia en el
+                desarrollo web y mas de 5 años en la programación.
+                {/* </BoxBodyText> */}
+              </HoverTextAnimated>
+            </AnimatePresence>
             <BoxButtonHero>
               <ButtonCV />
               <SocialMedia />

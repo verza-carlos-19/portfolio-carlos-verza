@@ -228,7 +228,7 @@ export const InfoBoxBody = styled.div`
 `;
 export const BoxBodyTitle = styled.h3`
   font-size: 1.1rem;
-  color: #ffffff;
+  /* color: #ffffff; */
   font-family: "Noto Sans JP", sans-serif;
 `;
 export const BoxBodyText = styled.p`

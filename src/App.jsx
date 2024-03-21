@@ -1,11 +1,13 @@
-import Hero from "./componentes/Hero/Hero";
-import Projects from "./componentes/Projects/Projects";
+import { BrowserRouter } from "react-router-dom";
+
+import AnimatedRoutes from "./componentes/AnimatedRoutes/AnimatedRoutes";
 
 function App() {
   return (
     <>
-      <Hero />
-      <Projects />
+      <BrowserRouter>
+        <AnimatedRoutes />
+      </BrowserRouter>
     </>
   );
 }
