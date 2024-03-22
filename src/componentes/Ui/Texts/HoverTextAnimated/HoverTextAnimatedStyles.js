@@ -36,6 +36,9 @@ export const Mask = styled(motion.div)`
   /* p {
     font-weight: 600;
   } */
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 export const BoxText = styled.div`
   display: flex;
