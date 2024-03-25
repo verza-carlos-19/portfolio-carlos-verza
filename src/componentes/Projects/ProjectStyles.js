@@ -42,6 +42,7 @@ export const ProjectsBoxSizing = styled.article`
   margin-bottom: 10rem;
   @media (max-width: 768px) {
     padding: 0rem;
+    top: 80px;
   }
 `;
 export const Title = styled(motion.h2)`
