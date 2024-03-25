@@ -1,8 +1,8 @@
 export const perspective = {
   initial: {
-    scale: 0.5,
+    scale: 0.8,
     x: "100vw",
-    filter: "blur(3px)",
+    filter: "blur(15px)",
     transition: {
       duration: 0.3,
       ease: [0.45, 0.02, 0.58, 0.78],
@@ -22,10 +22,10 @@ export const perspective = {
   },
 
   exit: {
-    scale: 0.5,
-    x: "100vw",
+    scale: 0.8,
+    x: "-100vw",
     // y: "-25vh",
-    filter: "blur(3px)",
+    filter: "blur(10px)",
 
     transition: {
       duration: 0.5,

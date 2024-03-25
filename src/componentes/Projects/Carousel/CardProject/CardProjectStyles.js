@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// export const Card = styled.figure`
 export const Card = styled.figure`
   position: absolute;
   width: 400px;
@@ -24,6 +25,13 @@ export const Card = styled.figure`
   img {
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 300px;
+  }
+  @media (max-width: 500px) {
+    width: 225px;
   }
 `;
 export const CardContent = styled.div`

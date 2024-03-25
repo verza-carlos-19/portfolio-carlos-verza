@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import CardProject from "./CardProject/CardProject";
 import { CarouselCont, ContainerCarousel } from "./CarouselStyles";
+import { useTransform, useSpring } from "framer-motion";
+function Carousel({ scroll }) {
+  const rotate = useTransform(scroll, [0, 0.95], [72, -720]);
+  const rotateY = useSpring(rotate, { stiffness: 500, damping: 75 });
+  const translate = useTransform(scroll, [0, 0.1], [300, 0]);
+  const translateY = useSpring(translate, { stiffness: 300, damping: 100 });
+  const scl = useTransform(scroll, [0.6, 1], [1, 1.3]);
+  const scale = useSpring(scl, { stiffness: 1000, damping: 100 });
+  const opac = useTransform(scroll, [0, 0.1], [0, 1]);
+  const opacity = useSpring(opac, { stiffness: 500, damping: 100 });
+  const transform = {
+    translateY,
+    scale,
+    opacity,
+  };
 
-function Carousel() {
   return (
     <>
-      <ContainerCarousel>
-        <CarouselCont>
+      <ContainerCarousel style={{ ...transform }}>
+        <CarouselCont
+          style={{ rotateY }}
+          // onChange={() => console.log(scroll)}
+          onClick={() => console.log(scroll)}
+        >
           <CardProject
             img={
               "https://res.cloudinary.com/ds1lnxkfc/image/upload/v1709914117/pzqh3uuk58bp2gmo5ywr.png"
@@ -17,6 +35,8 @@ function Carousel() {
             }
             urlWeb={"https://fake-ecommerce-integrador.vercel.app"}
             urlCode={"https://github.com/verza-carlos-19/fake-ecommerce"}
+            scroll={scroll}
+            deg={0}
           />
           <CardProject
             img={
@@ -26,6 +46,8 @@ function Carousel() {
             text={"Esta tienda fue desarrollada para motul"}
             urlWeb={"https://landing-motul.vercel.app"}
             urlCode={"https://github.com/verza-carlos-19/landing-motul"}
+            scroll={scroll}
+            deg={72}
           />
           <CardProject
             img={
@@ -37,6 +59,8 @@ function Carousel() {
             }
             urlCode={"https://github.com/verza-carlos-19/verza-portfolio"}
             urlWeb={"https://verzadev.vercel.app"}
+            scroll={scroll}
+            deg={144}
           />
           <CardProject
             img={
@@ -48,6 +72,8 @@ function Carousel() {
             }
             urlWeb={"https://landing-page-delta-sooty.vercel.app"}
             urlCode={"https://github.com/verza-carlos-19/landing-page"}
+            scroll={scroll}
+            deg={216}
           />
           <CardProject
             img={
@@ -59,6 +85,8 @@ function Carousel() {
             }
             urlCode={"https://github.com/verza-carlos-19/verza-carlos-landing"}
             urlWeb={"https://carlos-verza.vercel.app"}
+            scroll={scroll}
+            deg={288}
           />
         </CarouselCont>
       </ContainerCarousel>

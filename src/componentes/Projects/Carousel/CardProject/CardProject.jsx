@@ -8,11 +8,10 @@ import {
 } from "./CardProjectStyles";
 import ButtonPrimary from "../../../Ui/Buttons/ButtonPrimary/ButtonPrimary";
 import ButtonSecondary from "../../../Ui/Buttons/ButtonSecondary/ButtonSecondary";
-
-function CardProject({ img, title, text, urlWeb, urlCode }) {
+function CardProject({ img, title, text, urlWeb, urlCode, scroll, deg }) {
   return (
     <>
-      <Card>
+      <Card onClick={() => console.log("transform")}>
         <img src={img} alt={title} />
         <CardContent className="card__content">
           <CardTitle>{title}</CardTitle>
