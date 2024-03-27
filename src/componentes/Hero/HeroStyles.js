@@ -1,10 +1,12 @@
 import styled from "styled-components";
 export const HeroBox = styled.section`
   width: 100%;
+  height: 400vh;
   display: flex;
   flex-direction: column;
+
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   background: #121212;
   background: linear-gradient(
     135deg,
@@ -52,12 +54,16 @@ export const HeroBoxSizing = styled.div`
   height: 100vh;
   padding: 2rem;
   display: flex;
-  // position: sticky;
+  position: sticky;
   /* overflow: hidden; */
-  // bottom: 0;
+  perspective: 1500px;
+  top: 0;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  .mobile-component {
+    display: none;
+  }
   @media (max-width: 768px) {
     height: fit-content;
     padding: 4rem 2rem;

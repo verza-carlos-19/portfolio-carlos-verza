@@ -4,8 +4,9 @@ export const Button = styled.button`
   margin: 5px;
   border-radius: 8px;
   background: transparent;
-  border: 2px solid black;
-  color: black;
+  font-weight: 600;
+  border: 2px solid white;
+  color: white;
   transition: all 0.7s ease-in-out;
   &:hover {
     background: black;

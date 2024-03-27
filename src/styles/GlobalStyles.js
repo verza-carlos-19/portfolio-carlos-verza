@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
         background-color: #080808;
         font-family: "Montserrat",sans-serif;
         color: white;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 
     a {

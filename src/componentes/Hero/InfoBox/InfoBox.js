@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export const InfoBoxHero = styled(motion.article)`
   width: 100%;
   max-width: 600px;
-  height: 400px;
+  height: fit-content;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -15,13 +15,42 @@ export const InfoBoxHero = styled(motion.article)`
   background-color: #080808;
   color: black;
   padding: 2rem;
-  @media (max-width: 768px) {
+  transform-origin: right;
+  @media (max-width: 800px) {
     height: fit-content;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     gap: 2.8rem;
     padding: 2rem;
+    display: none;
+  }
+`;
+export const InfoBoxHeroMb = styled(motion.article)`
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 5px;
+  border: 2px solid #d4cfdb;
+  box-shadow: inset 0 0 0.4rem #aaa9ad, 0 0 0.7rem #aaa9ae;
+  background-color: #080808;
+  color: black;
+  padding: 2rem;
+  transform-origin: top;
+  display: none;
+  @media (max-width: 800px) {
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2.8rem;
+    padding: 2rem;
+    /* display: block; */
   }
 `;
 
@@ -36,7 +65,7 @@ export const InfoBoxRow = styled.div`
     flex-direction: column;
   }
 `;
-export const BoxRowItem = styled.div`
+export const BoxRowItem = styled(motion.div)`
   display: flex;
   width: 30%;
   flex-direction: column;
@@ -46,6 +75,7 @@ export const BoxRowItem = styled.div`
     color: #ffffff;
     font-size: 1.2rem;
     text-align: center;
+    cursor: default;
     font-weight: 600;
     font-family: "Noto Sans JP", sans-serif;
   }
@@ -117,11 +147,13 @@ export const TipInfo = styled.div`
     transform: translate(-50%, -5px);
   }
 `;
-export const InfoBoxBody = styled.div`
+export const InfoBoxBody = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform-origin: top;
   gap: 0.5rem;
+  /* overflow: hidden; */
 `;
 export const BoxBodyTitle = styled.h3`
   font-size: 1.1rem;
@@ -135,13 +167,15 @@ export const BoxBodyText = styled.p`
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
 `;
-export const BoxButtonHero = styled.div`
+export const BoxButtonHero = styled(motion.div)`
   display: flex;
   width: 90%;
   justify-content: space-between;
   align-items: center;
+  /* overflow: hidden; */
   gap: 1rem;
   margin-top: 2rem;
+  transform-origin: top;
   @media (max-width: 768px) {
     width: 100%;
     flex-direction: column;

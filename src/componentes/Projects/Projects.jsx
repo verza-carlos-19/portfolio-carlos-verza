@@ -8,7 +8,7 @@ function Projects() {
     target: ref,
     offset: ["start start", "end end"],
   });
-  const translate = useTransform(scrollYProgress, [0, 0.1, 0.7], [250, 0, -20]);
+  const translate = useTransform(scrollYProgress, [0, 0.1, 0.7], [250, 0, 0]);
   const translateY = useSpring(translate, { stiffness: 300, damping: 100 });
 
   const scl = useTransform(

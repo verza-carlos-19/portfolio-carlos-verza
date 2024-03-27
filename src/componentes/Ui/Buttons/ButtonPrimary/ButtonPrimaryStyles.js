@@ -4,12 +4,13 @@ export const Button = styled.button`
   border-radius: 8px;
   margin: 5px;
   background: black;
+  font-weight: 600;
   border: 2px solid black;
   color: white;
   transition: all 0.7s ease-in-out;
   &:hover {
     background: transparent;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid white;
+    color: white;
   }
 `;

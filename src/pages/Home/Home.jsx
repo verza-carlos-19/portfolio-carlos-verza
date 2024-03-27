@@ -4,6 +4,7 @@ import Projects from "../../componentes/Projects/Projects";
 import Inner from "../../componentes/Inner/Inner";
 import Footer from "../../componentes/Footer/Footer";
 import { useScroll } from "framer-motion";
+
 function Home() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -13,7 +14,7 @@ function Home() {
   return (
     <>
       <Inner>
-        <Hero />
+        <Hero scroll={scrollYProgress} />
         <Projects />
         <Footer scroll={scrollYProgress} />
       </Inner>
