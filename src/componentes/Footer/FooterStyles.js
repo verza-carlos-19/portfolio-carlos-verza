@@ -11,7 +11,7 @@ export const FooterBox = styled(motion.footer)`
   color: white;
   box-shadow: 0 0 3rem black;
   padding-bottom: 0.1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 export const BoxEffect = styled(motion.div)`
   gap: 5px;
@@ -38,6 +38,7 @@ export const FooterText = styled.p`
 
 export const FooterImg = styled.img`
   width: 17.5%;
+  z-index: 5;
   @media (max-width: 768px) {
     width: 30%;
   }

@@ -11,8 +11,8 @@ function AnimatedRoutes() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           {/* <Route path="/" element={<Layout></Layout>}> */}
-          <Route path="/" element={<DisplayDoor />} />
-          <Route path="home" element={<Home />} />
+          {/* <Route path="/" element={<DisplayDoor />} /> */}
+          <Route path="/" element={<Home />} />
           {/* </Route> */}
         </Routes>
       </AnimatePresence>

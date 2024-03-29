@@ -132,7 +132,7 @@ export const TipInfo = styled.div`
     left: 50%;
     border-width: 8px;
     border-style: solid;
-    border-color: transparent transparent #4e4f4f transparent;
+    border-color: transparent transparent #ffffff transparent;
     transform: translateX(-50%);
   }
 
@@ -143,8 +143,10 @@ export const TipInfo = styled.div`
     top: 140%;
     opacity: 1;
     visibility: visible;
-    background: #4e4f4f;
+    background: rgb(19, 19, 19);
+    box-shadow: 0 0 7px white, inset 0 0 3px white;
     transform: translate(-50%, -5px);
+    border: 2px solid white;
   }
 `;
 export const InfoBoxBody = styled(motion.div)`

@@ -6,7 +6,7 @@ function Footer({ scroll }) {
   const opac = useTransform(scroll, [0.85, 0.9], [0, 1]);
 
   const opacity = useSpring(opac, { stiffness: 300, damping: 100 });
-  const translateX = useSpring(translate, { stiffness: 1000, damping: 100 });
+  const translateX = useSpring(translate, { stiffness: 500, damping: 250 });
   const transforma = {
     opacity,
     translateX,

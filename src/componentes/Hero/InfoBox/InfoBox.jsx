@@ -25,18 +25,6 @@ function InfoBox({ scroll }) {
             <ul>
               <li>
                 <TipInfo>
-                  <span className="text" onClick={console.log(animations)}>
-                    <img
-                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1709468688/174854_d5quls.png"
-                      width={"26px"}
-                      alt="HTML"
-                    />
-                  </span>
-                  <span className="tooltip">avanzado</span>
-                </TipInfo>
-              </li>
-              <li>
-                <TipInfo>
                   <span className="text">
                     <img
                       src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1709469893/4202020css3htmllogosocialsocialmedia-115668_115633_basak1.png"
@@ -73,23 +61,11 @@ function InfoBox({ scroll }) {
               </li>
               <li>
                 <TipInfo>
-                  <span className="text">
+                  <span className="text" onClick={console.log(animations)}>
                     <img
-                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1709468661/2560px-Node.js_logo.svg_vqwbqb.png"
-                      width={"30px"}
-                      alt="NodeJs"
-                    />
-                  </span>
-                  <span className="tooltip">intermedio</span>
-                </TipInfo>
-              </li>
-              <li>
-                <TipInfo>
-                  <span className="text">
-                    <img
-                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1709468644/MySQL-logo_vmjwxn.png"
-                      width={"30px"}
-                      alt="Mysql"
+                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1711632495/redux_kx4z5z.svg"
+                      width={"26px"}
+                      alt="redux"
                     />
                   </span>
                   <span className="tooltip">avanzado</span>
@@ -99,9 +75,33 @@ function InfoBox({ scroll }) {
                 <TipInfo>
                   <span className="text">
                     <img
-                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1709468633/Git-logo.svg_tfyzcw.png"
+                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1709468661/2560px-Node.js_logo.svg_vqwbqb.png"
                       width={"30px"}
-                      alt="git"
+                      alt="NodeJs"
+                    />
+                  </span>
+                  <span className="tooltip">avanzado</span>
+                </TipInfo>
+              </li>
+              <li>
+                <TipInfo>
+                  <span className="text">
+                    <img
+                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1711552888/typescript_sp6sz0.svg"
+                      width={"30px"}
+                      alt="typescript"
+                    />
+                  </span>
+                  <span className="tooltip">avanzado</span>
+                </TipInfo>
+              </li>
+              <li>
+                <TipInfo>
+                  <span className="text">
+                    <img
+                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1711554501/nextjs_qb8y2l.svg"
+                      width={"33px"}
+                      alt="nextJs"
                     />
                   </span>
                   <span className="tooltip">intermedio</span>
@@ -111,12 +111,12 @@ function InfoBox({ scroll }) {
                 <TipInfo>
                   <span className="text">
                     <img
-                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1709468625/226777_mbsnvk.png"
-                      width={"30px"}
-                      alt="java"
+                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1711552576/framer-motion_dwhgn0.svg"
+                      width={"28px"}
+                      alt="famer-motion"
                     />
                   </span>
-                  <span className="tooltip">intermedio</span>
+                  <span className="tooltip">avanzado</span>
                 </TipInfo>
               </li>
             </ul>
@@ -333,12 +333,12 @@ export function InfoBoxMb({ scroll }) {
                 <TipInfo>
                   <span className="text">
                     <img
-                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1709468625/226777_mbsnvk.png"
+                      src="https://res.cloudinary.com/ds1lnxkfc/image/upload/v1711552576/framer-motion_dwhgn0.svg"
                       width={"30px"}
-                      alt="java"
+                      alt="framer-motion"
                     />
                   </span>
-                  <span className="tooltip">intermedio</span>
+                  <span className="tooltip">avanzado</span>
                 </TipInfo>
               </li>
             </ul>

@@ -26,11 +26,11 @@ function DisplayDoor() {
       if (finDePagina) {
         const alturaTotal = finDePagina.offsetTop + finDePagina.offsetHeight;
         if (window.pageYOffset + window.innerHeight >= alturaTotal) {
-          window.location.href = `${window.location.href}home`;
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
+          // window.location.href = `${window.location.href}home`;
+          // window.scrollTo({
+          //   top: 0,
+          //   behavior: "smooth",
+          // });
         }
       }
     };
