@@ -143,7 +143,8 @@ export const TipInfo = styled.div`
     top: 140%;
     opacity: 1;
     visibility: visible;
-    background: rgb(19, 19, 19);
+    background: rgb(19 19 19 / 16%);
+    backdrop-filter: blur(4px);
     box-shadow: 0 0 7px white, inset 0 0 3px white;
     transform: translate(-50%, -5px);
     border: 2px solid white;
