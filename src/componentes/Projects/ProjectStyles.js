@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 export const ProjectsBox = styled.section`
-  width: 300vw;
+  width: 100vw;
   height: 250vh;
-  display: none;
+  /* display: none; */
   justify-content: center;
-  align-items: start;
+  align-items: center;
   background: #080808;
   background: #000000;
   --gap: 5em;
@@ -26,11 +26,6 @@ export const ProjectsBox = styled.section`
       var(--color) var(--gap)
     );
   background-size: var(--gap) var(--gap);
-  @media (max-width: 2200px) {
-    @media (min-width: 1000px) {
-      display: flex;
-    }
-  }
   /* overflow-x: hidden; */
 `;
 export const ProjectsBoxMid = styled.section`

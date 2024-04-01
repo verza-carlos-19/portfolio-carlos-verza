@@ -10,7 +10,7 @@ function PresentBox({ scroll }) {
   // const translateX = useTransform(scroll, [0, 0.1], [300, 0]);
   const translate = useTransform(
     scroll,
-    [0, 0.1, 0.58, 0.65],
+    [0, 0.1, 0.58, 0.7],
     [300, 0, 0, -1200]
   );
   const translateX = useSpring(translate, {
@@ -31,12 +31,18 @@ function PresentBox({ scroll }) {
     stiffness: 700,
     damping: 150,
   });
+  const sclX = useTransform(scroll, [0.4, 0.6], [1, 0]);
+  const scaleX = useSpring(sclX, {
+    stiffness: 700,
+    damping: 150,
+  });
   // const scl = useTransform(scroll, [0, 0.05], [1.2, 1]);
   // const scale = useSpring(scl, { stiffness: 500, damping: 100 });
 
   const transforma = {
     translateX,
     scale,
+    // scaleX,
     rotateY,
   };
 

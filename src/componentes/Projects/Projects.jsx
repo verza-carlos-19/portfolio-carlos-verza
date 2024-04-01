@@ -16,7 +16,7 @@ function Projects() {
     target: ref,
     offset: ["start start", "end end"],
   });
-  const translate = useTransform(scrollYProgress, [0, 0.1, 0.7], [250, 10, 0]);
+  const translate = useTransform(scrollYProgress, [0, 0.1, 0.7], [100, 10, 0]);
   const translateY = useSpring(translate, { stiffness: 300, damping: 100 });
   const translateX = useTransform(scrollYProgress, [0, 1], [0, -2500]);
   const x = useSpring(translateX, { stiffness: 300, damping: 200 });
@@ -29,7 +29,7 @@ function Projects() {
   const scl = useTransform(
     scrollYProgress,
     [0, 0.1, 0.7, 1],
-    [4.5, 1.5, 2, 2.5]
+    [5.5, 2.5, 2, 3.5]
   );
   const scale = useSpring(scl, { stiffness: 300, damping: 200 });
   const transform = {
@@ -39,12 +39,12 @@ function Projects() {
   return (
     <>
       <ProjectsBox ref={ref}>
-        <ProjectsBoxHorizontal style={{ x }}>
-          <ProjectsBoxSizing style={{ x: translateXBox }}>
-            <Title style={{ ...transform }}>Proyectos</Title>
-            <Carousel scroll={scrollYProgress} />
-          </ProjectsBoxSizing>
-        </ProjectsBoxHorizontal>
+        {/* <ProjectsBoxHorizontal style={{ x }}> */}
+        <ProjectsBoxSizing>
+          <Title style={{ ...transform }}>Proyectos</Title>
+          <Carousel scroll={scrollYProgress} />
+        </ProjectsBoxSizing>
+        {/* </ProjectsBoxHorizontal> */}
       </ProjectsBox>
     </>
   );

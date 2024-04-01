@@ -20,9 +20,9 @@ function Home() {
       <Inner>
         <Hero scroll={scrollYProgress} />
         <Projects />
-        <ProjectsMb />
+        {/* <ProjectsMb />
         <ProjectsLg />
-        <ProjectsMid />
+        <ProjectsMid /> */}
         <Footer scroll={scrollYProgress} />
       </Inner>
     </>

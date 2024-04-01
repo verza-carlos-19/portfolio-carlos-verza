@@ -7,7 +7,7 @@ export const Presentation = styled(motion.article)`
   height: 500px;
   max-width: 400px;
   /* ----------------------------front----------------------------- */
-
+  /* transform-origin: center; */
   .cara {
     position: absolute;
     border-radius: 5px;
